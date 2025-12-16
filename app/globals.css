@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  backgroundImage:
+}
+
+
+
+.hero-back{
+
+    background-image: url("/carwash2.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      
+}
+
+
+
+/* Hero Section
+.herosection {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/carwash2.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+/* Service Cards */
+.service-display-card {
+    height: 350px;
+    width: 400px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Card Backgrounds */
+.card-one {
+    color: white;
+    background-image: url("/exterior.jpg"); 
+    background-position: center;
+    background-size: cover;
+}
+
+.card-two {
+    color: white;
+    background-image: url("/interior.avif"); 
+    background-position: center;
+    background-size: cover;
+}
+
+.card-three {
+    color: white;
+    background-image: url("/full.jpg"); 
+    background-position: center;
+    background-size: cover;
+}
+
+/* Overlay hover effect */
+.card-one::after,
+.card-two::after,
+.card-three::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(173, 216, 230, 0); 
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+}
+
+
+.card-one:hover::after,
+.card-two:hover::after,
+.card-three:hover::after {
+    background-color: rgba(173, 216, 230, 0.3);
+}
+
+.card-one:hover,
+.card-two:hover,
+.card-three:hover {
+    transform: scale(1.05);
+}
+
+
+{/*sub hover*/}
+
+.sub-one,
+.sub-two,
+.sub-three {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* smooth scale */
+}
+
+.sub-one::after,
+.sub-two::after,
+.sub-three::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(173, 216, 230, 0); 
+    transition: background-color 0.4s ease; /* smooth overlay */
+    border-radius: 15px;
+}
+
+
+.sub-one:hover,
+.sub-two:hover,
+.sub-three:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
