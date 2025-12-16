@@ -34,7 +34,7 @@ export default function Home() {
 
 
       {/* Services Section */}
-      <section className="service-display-section">
+      <section id="services" className="service-display-section">
         <h2 className="text-black dark:text-black text-2xl font-bold ml-[16.5%] py-12">
           SERVICES
         </h2>
