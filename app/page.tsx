@@ -59,7 +59,7 @@ export default function Home() {
 
 
 {/*about wasXpress*/}
-    <section className="subscriptionPage py-12">
+  <section id="about" className="subscriptionPage py-12">
     <h2 className="text-black dark:text-black text-2xl font-bold text-center mt-[50px]">
         ABOUT WashXpress
     </h2>
