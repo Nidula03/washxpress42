@@ -15,32 +15,32 @@ export default function NavBar() {
     }
   };
   return (
-    <nav className="bg-[#0A74DA] px-8 py-6 flex justify-between items-center font-bold text-white">
-      <h2 className="m-0 text-xl">WashXpress</h2>
-      <div className="flex gap-5">
-        <Link href="/" className="text-black">Home</Link>
+    <nav className="bg-[#0A74DA] px-4 py-4 font-bold text-white">
+      <div className="grid grid-cols-6 items-center text-black max-w-[900px] mx-auto">
+        <Link href="/" className="justify-self-center">WashXpress</Link>
+        <Link href="/" className="justify-self-center">Home</Link>
         <Link
           href="/#services"
-          className="text-black"
+          className="justify-self-center"
           onClick={(e) => handleScroll(e, "services")}
         >
           Services
         </Link>
         <Link
           href="/#about"
-          className="text-black"
+          className="justify-self-center"
           onClick={(e) => handleScroll(e, "about")}
         >
           About
         </Link>
         <Link
           href="/#subscription-plan"
-          className="text-black"
+          className="justify-self-center"
           onClick={(e) => handleScroll(e, "subscription-plan")}
         >
           Subscription
         </Link>
-        <Link href="/contact" className="text-black">Contact</Link>
+        <Link href="/contact" className="justify-self-center">Contact</Link>
       </div>
     </nav>
   );
